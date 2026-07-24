@@ -1,11 +1,288 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Africonnet</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AfriConnect Summit 2026 — Accueil</title>
+
+  <!-- Google Fonts : Fraunces (titres) + Inter (corps) + IBM Plex Mono (données) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Feuille de style -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="index.html" class="logo"></a>
+      <img src="image/image.png" alt="logo" width="120">
+       
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="intervenants.html">Intervenants</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Basculer le mode sombre / clair">
+          <i class="bi bi-moon-stars icon-moon" aria-hidden="true"></i>
+          <i class="bi bi-sun icon-sun" aria-hidden="true"></i>
+        </button>
+        <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="accueil">
+      <svg id="constellation" aria-hidden="true"></svg>
+      <div class="wrap hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">17 — 19 février 2027 · Kigali, Rwanda</p>
+          <h1>Connecter les <em>idées</em>,<br>relier le continent.</h1>
+          <p class="sub">Le sommet panafricain qui réunit <strong>bâtisseurs, décideurs et investisseurs</strong> autour d'un objectif commun&nbsp;: accélérer une Afrique connectée, numérique et souveraine.</p>
+
+          <div class="cta-row">
+            <a href="#inscription" class="btn btn-primary">Réserver ma place</a>
+            <a href="programme.html" class="btn btn-ghost">Voir le programme</a>
+          </div>
+
+          <!-- Compte à rebours temps réel vers la date de la conférence -->
+          <div class="countdown" id="countdown">
+            <div class="cd-block"><span class="cd-num" id="cd-days">00</span><span class="cd-label">Jours</span></div>
+            <div class="cd-block"><span class="cd-num" id="cd-hours">00</span><span class="cd-label">Heures</span></div>
+            <div class="cd-block"><span class="cd-num" id="cd-min">00</span><span class="cd-label">Minutes</span></div>
+            <div class="cd-block"><span class="cd-num" id="cd-sec">00</span><span class="cd-label">Secondes</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="signal-divider" aria-hidden="true"></div>
+
+    <!-- ===================== CHIFFRES CLÉS ===================== -->
+    <section class="stats" id="chiffres">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">En chiffres</p>
+          <h2>Une communauté qui grandit chaque année.</h2>
+        </div>
+
+        <div class="stats-grid reveal">
+          <article class="stat-card">
+            <p class="stat-num" data-target="1200" data-prefix="+">0</p>
+            <p class="stat-label">Participants attendus</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-num" data-target="48">0</p>
+            <p class="stat-label">Intervenants experts</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-num" data-target="3">0</p>
+            <p class="stat-label">Jours de sommet</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-num" data-target="12">0</p>
+            <p class="stat-label">Pays représentés</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== POURQUOI PARTICIPER ===================== -->
+    <section class="why" id="pourquoi">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Pourquoi participer</p>
+          <h2>Trois raisons de traverser le continent pour être là.</h2>
+        </div>
+
+        <div class="why-grid reveal">
+          <article class="why-card">
+            <div class="why-icon"><i class="bi bi-people" aria-hidden="true"></i></div>
+            <h3>Réseautage continental</h3>
+            <p>Rencontrez des fondateurs, investisseurs et décideurs venus de 12 pays autour de rendez-vous ciblés et de moments informels pensés pour créer de vraies connexions.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-icon"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i></div>
+            <h3>Innovation & investissement</h3>
+            <p>Assistez aux annonces de financement, aux démonstrations produit et aux tables rondes qui dessinent la prochaine décennie de la tech africaine.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-icon"><i class="bi bi-tools" aria-hidden="true"></i></div>
+            <h3>Ateliers pratiques</h3>
+            <p>Des formations concrètes animées par des praticiens&nbsp;: financement, scalabilité, cybersécurité et expansion régionale.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="signal-divider" aria-hidden="true"></div>
+
+    <!-- ===================== INTERVENANTS VEDETTES ===================== -->
+    <section class="speakers" id="intervenants-vedettes">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Intervenants vedettes</p>
+          <h2>Des voix qui façonnent l'Afrique numérique.</h2>
+        </div>
+
+        <div class="speakers-grid reveal">
+          <article class="speaker-card">
+            <div class="speaker-photo">
+              <img src="https://i.pravatar.cc/400?img=32" alt="Portrait d'Amara Diallo, Directrice Innovation chez TechSahel">
+              <span class="speaker-flag">SN</span>
+            </div>
+            <div class="speaker-info">
+              <h3>Amara Diallo</h3>
+              <p class="speaker-role">Directrice Innovation, TechSahel</p>
+              <p class="speaker-country">Sénégal</p>
+            </div>
+          </article>
+          <article class="speaker-card">
+            <div class="speaker-photo">
+              <img src="https://i.pravatar.cc/400?img=14" alt="Portrait de Kwame Boateng, fondateur de PayLink Africa">
+              <span class="speaker-flag">GH</span>
+            </div>
+            <div class="speaker-info">
+              <h3>Kwame Boateng</h3>
+              <p class="speaker-role">Fondateur, PayLink Africa</p>
+              <p class="speaker-country">Ghana</p>
+            </div>
+          </article>
+          <article class="speaker-card">
+            <div class="speaker-photo">
+              <img src="https://i.pravatar.cc/400?img=47" alt="Portrait de Fatima El Mansouri, associée chez Atlas Ventures">
+              <span class="speaker-flag">MA</span>
+            </div>
+            <div class="speaker-info">
+              <h3>Fatima El Mansouri</h3>
+              <p class="speaker-role">Associée, Atlas Ventures</p>
+              <p class="speaker-country">Maroc</p>
+            </div>
+          </article>
+          <article class="speaker-card">
+            <div class="speaker-photo">
+              <img src="https://i.pravatar.cc/400?img=53" alt="Portrait de Thabo Nkosi, CTO chez Ubuntu Cloud">
+              <span class="speaker-flag">ZA</span>
+            </div>
+            <div class="speaker-info">
+              <h3>Thabo Nkosi</h3>
+              <p class="speaker-role">CTO, Ubuntu Cloud</p>
+              <p class="speaker-country">Afrique du Sud</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="center-cta reveal">
+          <a href="intervenants.html" class="btn btn-ghost">Voir tous les intervenants</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="signal-divider" aria-hidden="true"></div>
+
+    <!-- ===================== SPONSORS ===================== -->
+    <section class="sponsors" id="sponsors">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Nos partenaires</p>
+          <h2>Ils rendent AfriConnect possible.</h2>
+        </div>
+
+        <div class="sponsors-tiers reveal">
+          <div class="tier tier-or">
+            <p class="tier-label tier-label-or">Partenaire Or</p>
+            <div class="tier-row">
+              <article class="sponsor-chip">Baobab Bank</article>
+              <img src="image/63b1e19d-c5be-4657-a213-4eeb3ec5b411.png" alt="Baobab Bank" width="150">
+            </div>
+          </div>
+
+          <div class="tier tier-argent">
+            <p class="tier-label">Partenaires Argent</p>
+            <div class="tier-row">
+              <img src="image/sahel.png" alt="sahel" width="150">
+              <article class="sponsor-chip">Sahel Telecom</article>
+              <img src="image/Real .jpeg" alt="Real Madrid" width="150">
+              <article class="sponsor-chip">Real Madrid</article>
+            </div>
+          </div>
+
+          <div class="tier tier-bronze">
+            <p class="tier-label">Partenaires Bronze</p>
+            <div class="tier-row">
+              <img src="image/06bef856-990f-41c0-9e07-9093f6807598.png" alt="Nairobi Cloud" width="150">
+               <article class="sponsor-chip">Nairobi Cloud</article>
+               <img src="image/Real.jpeg" alt="Real" width="150 ">
+              <article class="sponsor-chip">Microsoft</article>
+              <img src="image/orange.jpeg" alt="orange" width="150">
+              <article class="sponsor-chip">Orange</article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" id="inscription">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>AfriConnect Summit</h4>
+          <p>Le rendez-vous panafricain de l'innovation, de la tech et de l'investissement. Kigali, Rwanda — 17 au 19 février 2027.</p>
+          <ul class="socials">
+            <li><a href="#" aria-label="X / Twitter"><i class="bi bi-twitter-x" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="intervenants.html">Intervenants</a></li>
+            <li><a href="programme.html">Programme</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@africonnectsummit.africa"><i class="bi bi-envelope" aria-hidden="true"></i> contact@africonnectsummit.africa</a></li>
+            <li><a href="contact.html"><i class="bi bi-geo-alt" aria-hidden="true"></i> Kigali Convention Centre, Rwanda</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> AfriConnect Summit. Tous droits réservés.</p>
+        <p>Site conçu pour l'innovation africaine.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Retour en haut">
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Script unique -->
+  <script src="js/script.js"></script>
 </body>
 </html>

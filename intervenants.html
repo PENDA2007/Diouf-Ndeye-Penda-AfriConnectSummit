@@ -3,9 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Africonnet</title>
+    <title>Africonnet Summit</title>
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
+        <nav class="navbar" aria-label="Navigation principale">
+      <a href="index.html" class="logo"></a>
+      <img src="image/image.png" alt="logo" width="120">
+       
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="intervenants.html">Intervenants</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  <div class="nav-actions">
+    <button class="theme-toggle" aria-label="Changer de thème">🌙</button>
+    <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+<header class="hero">
+  <canvas class="node-field"></canvas>
+  <p class="breadcrumb"><a href="index.html">Accueil</a><span class="sep">→</span><span class="current">Intervenants</span></p>
+  <h1>Nos intervenants</h1>
+  <p class="hero-sub">Neuf voix venues de tout le continent pour partager leur expertise en IA, business, design et data.</p>
+</header>
+
+<section class="block" id="intervenants">
+  <div class="section-head reveal" data-anim="fade-in">
+    <span class="tag">Filtrer</span>
+    <h2>Explorer par thématique</h2>
+  </div>
+
+  <div class="filter-bar reveal" data-anim="fade-in">
+    <button class="filter-btn active" data-filter="tous">Tous</button>
+    <button class="filter-btn" data-filter="ia-tech">IA &amp; Tech</button>
+    <button class="filter-btn" data-filter="business">Business</button>
+    <button class="filter-btn" data-filter="design">Design</button>
+    <button class="filter-btn" data-filter="data">Data</button>
+  </div>
+
+  <div class="speaker-grid">
+    <article class="speaker-card reveal" data-anim="zoom-in" data-category="ia-tech">
+      <img class="speaker-photo" src="image/pexels-mikhail-nilov-9300897.jpg" alt="Portrait d'Aïcha Diallo" width="300">
+      <div class="speaker-body">
+        <h3>Aïcha Diallo</h3>
+        <p class="speaker-role">Directrice recherche en intelligence artificielle</p>
+        <p class="speaker-meta">🇸🇳 Sénégal</p>
+        <span class="speaker-tag">IA &amp; Tech</span>
+      </div>
+    </article>
+
+    <article class="speaker-card reveal" data-anim="zoom-in" data-category="ia-tech">
+      <img class="speaker-photo" src="image/pexels-diva-plavalaguna-6149788.jpg" alt="Portrait de Kwame Owusu" width="300">
+      <div class="speaker-body">
+        <h3>Kwame Owusu</h3>
+        <p class="speaker-role">Ingénieur en traitement automatique des langues</p>
+        <p class="speaker-meta">🇬🇭 Ghana</p>
+        <span class="speaker-tag">IA &amp; Tech</span>
+      </div>
+    </article>
+
+    <article class="speaker-card reveal" data-anim="zoom-in" data-category="ia-tech">
+      <img class="speaker-photo" src="image/pexels-mizunokozuki-12903254.jpg" alt="Portrait de Nadia Berrada" width="300">
+      <div class="speaker-body">
+        <h3>Nadia Berrada</h3>
+        <p class="speaker-role">Experte en cybersécurité des startups</p>
+        <p class="speaker-meta">🇲🇦 Maroc</p>
+        <span class="speaker-tag">IA &amp; Tech</span>
+      </div>
+    </article>
+
+    <article class="speaker-card reveal" data-anim="zoom-in" data-category="business">
+      <img class="speaker-photo" src="image/pexels-anna-nekrashevich-6801684.jpg" alt="Portrait de Thierno Bah" width="300">
+      <div class="speaker-body">
+        <h3>Thierno Bah</h3>
+        <p class="speaker-role">Investisseur en capital-risque</p>
+        <p class="speaker-meta">🇬🇳 Guinée</p>
+        <span class="speaker-tag">Business</span>
+      </div>
+    </article>
+
+    <article class="speaker-card reveal" data-anim="zoom-in" data-category="business">
+      <img class="speaker-photo" src="image/pexels-mizunokozuki-12911751.jpg" alt="Portrait de Grace Adeyemi" width="300">
+      <div class="speaker-body">
+        <h3>Grace Adeyemi</h3>
+        <p class="speaker-role">Fondatrice &amp; PDG, fintech panafricaine</p>
+        <p class="speaker-meta">🇳🇬 Nigéria</p>
+        <span class="speaker-tag">Business</span>
+      </div>
+    </article>
+
+    <article class="speaker-card reveal" data-anim="zoom-in" data-category="design">
+      <img class="speaker-photo" src="image/pexels-dimkidama-15675799.jpg" alt="Portrait de Léonie Mbeki" width="300">
+      <div class="speaker-body">
+        <h3>Léonie Mbeki</h3>
+        <p class="speaker-role">Directrice design produit</p>
+        <p class="speaker-meta">🇿🇦 Afrique du Sud</p>
+        <span class="speaker-tag">Design</span>
+      </div>
+    </article>
+
+    <article class="speaker-card reveal" data-anim="zoom-in" data-category="design">
+      <img class="speaker-photo" src="image/istock-ai-generated-aa442859-d1c6-491e-848c-54eb7d64b7bajpg.jpg" alt="Portrait de Rania Haddad" width="300">
+      <div class="speaker-body">
+        <h3>Rania Haddad</h3>
+        <p class="speaker-role">Responsable des systèmes de design</p>
+        <p class="speaker-meta">🇲🇦 Maroc</p>
+        <span class="speaker-tag">Design</span>
+      </div>
+    </article>
+
+    <article class="speaker-card reveal" data-anim="zoom-in" data-category="data">
+      <img class="speaker-photo" src="image/pexels-yankrukov-7793714.jpg" alt="Portrait d'Emmanuel Kagabo" width="300">
+      <div class="speaker-body">
+        <h3>Emmanuel Kagabo</h3>
+        <p class="speaker-role">Data scientist spécialisé en agritech</p>
+        <p class="speaker-meta">🇷🇼 Rwanda</p>
+        <span class="speaker-tag">Data</span>
+      </div>
+    </article>
+
+    <article class="speaker-card reveal" data-anim="zoom-in" data-category="data">
+      <img class="speaker-photo" src="image/pexels-shkrabaanthony-5466267.jpg" alt="Portrait de Chidinma Okafor" width="300">
+      <div class="speaker-body">
+        <h3>Chidinma Okafor</h3>
+        <p class="speaker-role">Analyste données, investissement d'impact</p>
+        <p class="speaker-meta">🇳🇬 Nigéria</p>
+        <span class="speaker-tag">Data</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <span>AfriConnect Summit 2026 — Kigali, Rwanda</span>
+  <span>9 intervenants confirmés · d'autres à venir</span>
+</footer>
+
+<script src="assets/script.js"></script>
 </body>
 </html>

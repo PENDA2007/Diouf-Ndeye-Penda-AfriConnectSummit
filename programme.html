@@ -4,8 +4,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Africonnet</title>
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
+   <header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="index.html" class="logo"></a>
+      <img src="image/image.png" alt="logo" width="120">
+       
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="intervenants.html">Intervenants</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  <div class="nav-actions">
+    <button class="theme-toggle" aria-label="Changer de thème">🌙</button>
+    <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="hero">
+  <canvas class="node-field"></canvas>
+  <p class="breadcrumb"><a href="index.html">Accueil</a><span class="sep">→</span><span class="current">Programme</span></p>
+  <h1>Programme du Sommet</h1>
+  <p class="hero-sub">Trois jours pour connecter l'intelligence artificielle, le business et le design au service de la croissance africaine — 14–16 octobre 2026, Kigali.</p>
+</header>
+
+<section class="block" id="planning">
+  <div class="section-head reveal" data-anim="fade-in">
+    <span class="tag">Planning</span>
+    <h2>Le déroulé des trois jours</h2>
+  </div>
+
+  <div class="tabbar reveal" data-anim="fade-in" role="tablist" aria-label="Sélection du jour">
+    <button class="tab-btn active" role="tab" aria-selected="true" data-day="1"><span class="num">01</span>Jour 1</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-day="2"><span class="num">02</span>Jour 2</button>
+    <button class="tab-btn" role="tab" aria-selected="false" data-day="3"><span class="num">03</span>Jour 3</button>
+  </div>
+
+  <!-- JOUR 1 -->
+  <div class="day-panel active" data-day-panel="1">
+    <p class="day-caption">Mercredi 14 octobre — Vision : IA, souveraineté numérique et connectivité</p>
+    <table class="schedule">
+      <thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="hour">08:30-09:15</td>
+          <td class="session">Accueil &amp; retrait des badges<small>Café de bienvenue, réseautage</small></td>
+          <td>Équipe AfriConnect</td>
+          <td class="room">Hall Kigali</td>
+        </tr>
+        <tr>
+          <td class="hour">09:15 - 10:00</td>
+          <td class="session">Ouverture — L'Afrique, laboratoire mondial de l'IA appliquée<small>Keynote plénière</small></td>
+          <td>Aïcha Diallo</td>
+          <td class="room">Amphithéâtre Sankara</td>
+        </tr>
+        <tr>
+          <td class="hour">10:15 - 11:15</td>
+          <td class="session">Construire des modèles IA pour les langues africaines<small>Retour d'expérience technique</small></td>
+          <td>Kwame Owusu</td>
+          <td class="room">Salle Lagos</td>
+        </tr>
+        <tr>
+          <td class="hour">11:30 - 12:30</td>
+          <td class="session">Table ronde — Souveraineté des données et cloud africain<small>Enjeux réglementaires et infrastructures</small></td>
+          <td>Fatou Ndiaye &amp; invités</td>
+          <td class="room">Salle Nairobi</td>
+        </tr>
+        <tr>
+          <td class="hour">14:00 - 15:00</td>
+          <td class="session">Connectivité rurale : dernier kilomètre, premier impact<small>Réseaux, satellites et solutions hybrides</small></td>
+          <td>Samuel Mwangi</td>
+          <td class="room">Atelier Accra</td>
+        </tr>
+        <tr>
+          <td class="hour">15:15 - 16:15</td>
+          <td class="session">Cybersécurité pour les startups en croissance<small>Panorama des menaces et bonnes pratiques</small></td>
+          <td>Nadia Berrada</td>
+          <td class="room">Salle Lagos</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- JOUR 2 -->
+  <div class="day-panel" data-day-panel="2">
+    <p class="day-caption">Jeudi 15 octobre — Business : financer et faire grandir les entreprises africaines</p>
+    <table class="schedule">
+      <thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="hour">09:00 - 09:45</td>
+          <td class="session">Plénière — Où va le capital-risque africain en 2026 ?<small>Panorama des levées de fonds</small></td>
+          <td>Thierno Bah</td>
+          <td class="room">Amphithéâtre Sankara</td>
+        </tr>
+        <tr>
+          <td class="hour">10:00 - 11:00</td>
+          <td class="session">Du prototype au marché panafricain<small>Stratégies d'expansion multi-pays</small></td>
+          <td>Grace Adeyemi</td>
+          <td class="room">Salle Lagos</td>
+        </tr>
+        <tr>
+          <td class="hour">11:15 - 12:15</td>
+          <td class="session">Fintech &amp; paiements mobiles : la prochaine décennie<small>Interopérabilité et inclusion financière</small></td>
+          <td>Youssef El Amrani</td>
+          <td class="room">Salle Nairobi</td>
+        </tr>
+        <tr>
+          <td class="hour">13:30 - 14:30</td>
+          <td class="session">Diaspora et investissement d'impact<small>Mobiliser l'épargne de la diaspora</small></td>
+          <td>Chidinma Okafor</td>
+          <td class="room">Atelier Accra</td>
+        </tr>
+        <tr>
+          <td class="hour">14:45 - 15:45</td>
+          <td class="session">Atelier — Construire son pitch deck en 90 minutes<small>Format intensif, places limitées</small></td>
+          <td>Grace Adeyemi</td>
+          <td class="room">Atelier Accra</td>
+        </tr>
+        <tr>
+          <td class="hour">16:00 - 17:00</td>
+          <td class="session">Table ronde — Régulation panafricaine et zone de libre-échange<small>ZLECAf et commerce numérique</small></td>
+          <td>Thierno Bah &amp; invités</td>
+          <td class="room">Salle Nairobi</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- JOUR 3 -->
+  <div class="day-panel" data-day-panel="3">
+    <p class="day-caption">Vendredi 16 octobre — Design &amp; Data : concevoir des produits qui comptent</p>
+    <table class="schedule">
+      <thead><tr><th>Heure</th><th>Session</th><th>Intervenant</th><th>Salle</th></tr></thead>
+      <tbody>
+        <tr>
+          <td class="hour">09:00 - 09:45</td>
+          <td class="session">Plénière — Design centré-usage dans des contextes à faible bande passante<small>Principes et arbitrages</small></td>
+          <td>Léonie Mbeki</td>
+          <td class="room">Amphithéâtre Sankara</td>
+        </tr>
+        <tr>
+          <td class="hour">10:00 - 11:00</td>
+          <td class="session">Systèmes de design pour produits multi-marchés<small>Cohérence visuelle et localisation</small></td>
+          <td>Rania Haddad</td>
+          <td class="room">Salle Lagos</td>
+        </tr>
+        <tr>
+          <td class="hour">11:15 - 12:15</td>
+          <td class="session">La donnée agricole au service des petits producteurs<small>Data science appliquée à l'agritech</small></td>
+          <td>Emmanuel Kagabo</td>
+          <td class="room">Salle Nairobi</td>
+        </tr>
+        <tr>
+          <td class="hour">13:30 - 14:30</td>
+          <td class="session">Atelier de clôture — Prototyper une idée en équipe mixte<small>Travail collectif, restitution rapide</small></td>
+          <td>Équipe AfriConnect</td>
+          <td class="room">Atelier Accra</td>
+        </tr>
+        <tr>
+          <td class="hour">14:45 - 15:30</td>
+          <td class="session">Restitution des ateliers<small>Chaque équipe présente son prototype</small></td>
+          <td>Modération : Léonie Mbeki</td>
+          <td class="room">Amphithéâtre Sankara</td>
+        </tr>
+        <tr>
+          <td class="hour">15:45 - 16:30</td>
+          <td class="session">Clôture — Ce que nous emportons d'AfriConnect<small>Synthèse et rendez-vous 2027</small></td>
+          <td>Aïcha Diallo</td>
+          <td class="room">Amphithéâtre Sankara</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="block" id="thematiques">
+  <div class="section-head reveal" data-anim="fade-in">
+    <span class="tag">Axes</span>
+    <h2>Les quatre thématiques du sommet</h2>
+  </div>
+
+  <div class="theme-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:22px;">
+    <article class="info-card reveal" data-anim="fade-in">
+      <h3>🤖 IA &amp; Tech</h3>
+      <p>Modèles adaptés aux langues et contextes africains, cybersécurité, cloud souverain et infrastructures de connectivité.</p>
+    </article>
+    <article class="info-card reveal" data-anim="fade-in">
+      <h3>📈 Business</h3>
+      <p>Financement, capital-risque, expansion panafricaine et régulation du commerce numérique à l'échelle du continent.</p>
+    </article>
+    <article class="info-card reveal" data-anim="slide-in">
+      <h3>🎨 Design</h3>
+      <p>Conception de produits sobres et inclusifs, systèmes de design multi-marchés, expérience utilisateur en contexte contraint.</p>
+    </article>
+    <article class="info-card reveal" data-anim="slide-in">
+      <h3>📊 Data</h3>
+      <p>Données agricoles, santé et mobilité : exploiter la donnée pour des décisions publiques et privées plus justes.</p>
+    </article>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <span>AfriConnect Summit 2026 — Kigali, Rwanda</span>
+  <span>Programme sujet à modifications</span>
+</footer>
+
+<script src="assets/script.js"></script>
 </body>
 </html>
+   

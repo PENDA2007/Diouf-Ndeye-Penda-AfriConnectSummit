@@ -4,8 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Africonnet</title>
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    
+    <!-- HEADER/NAVBAR -->
+     header class="site-header">
+    <nav class="navbar" aria-label="Navigation principale">
+      <a href="index.html" class="logo"></a>
+      <img src="image/image.png" alt="logo" width="120">
+       
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="intervenants.html">Intervenants</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+  <div class="nav-actions">
+    <button class="theme-toggle" aria-label="Changer de thème">🌙</button>
+    <button class="hamburger" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="hero">
+  <canvas class="node-field"></canvas>
+  <p class="breadcrumb"><a href="index.html">Accueil</a><span class="sep">→</span><span class="current">Contact</span></p>
+  <h1>Inscription &amp; Contact</h1>
+  <p class="hero-sub">Réservez votre place au sommet ou posez-nous vos questions — l'équipe AfriConnect vous répond sous 48h.</p>
+</header>
+
+<section class="block" id="inscription">
+  <div class="section-head reveal" data-anim="fade-in">
+    <span class="tag">Formulaire</span>
+    <h2>S'inscrire au sommet</h2>
+  </div>
+
+  <div class="contact-columns">
+    <div class="contact-form-col reveal" data-anim="slide-in">
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="nom">Nom complet</label>
+          <input type="text" id="nom" name="nom" placeholder="Ex. Awa Traoré" required>
+          <p class="field-error"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Adresse email</label>
+          <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+          <p class="field-error"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="telephone">Téléphone</label>
+          <input type="tel" id="telephone" name="telephone" placeholder="+221 77 000 00 00" required>
+          <p class="field-error"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="participation">Type de participation</label>
+          <select id="participation" name="participation" required>
+            <option value="">Choisir une option</option>
+            <option value="participant">Participant</option>
+            <option value="intervenant">Intervenant</option>
+            <option value="exposant">Exposant</option>
+            <option value="presse">Presse</option>
+          </select>
+          <p class="field-error"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="pays">Pays africain</label>
+          <select id="pays" name="pays" required>
+            <option value="">Choisir un pays</option>
+            <option value="senegal">Sénégal</option>
+            <option value="ghana">Ghana</option>
+            <option value="kenya">Kenya</option>
+            <option value="nigeria">Nigéria</option>
+            <option value="maroc">Maroc</option>
+            <option value="rwanda">Rwanda</option>
+            <option value="afrique-du-sud">Afrique du Sud</option>
+            <option value="guinee">Guinée</option>
+            <option value="cote-ivoire">Côte d'Ivoire</option>
+            <option value="ethiopie">Éthiopie</option>
+            <option value="egypte">Égypte</option>
+            <option value="tunisie">Tunisie</option>
+          </select>
+          <p class="field-error"></p>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message / motivation</label>
+          <textarea id="message" name="message" placeholder="Parlez-nous de votre projet ou de votre intérêt pour le sommet (20 caractères minimum)." required></textarea>
+          <p class="field-error"></p>
+        </div>
+
+        <button type="submit" class="btn-submit">Envoyer mon inscription</button>
+        <p class="success-message" id="form-success"></p>
+      </form>
+    </div>
+
+    <div class="contact-info-col reveal" data-anim="fade-in">
+      <div class="info-card">
+        <h3>📍 Lieu</h3>
+        <p>Kigali Convention Centre<br>KG 2 Roundabout, Kigali, Rwanda</p>
+      </div>
+      <div class="info-card">
+        <h3>✉️ Email</h3>
+        <p><a href="mailto:inscription@africonnectsummit.africa">inscription@africonnectsummit.africa</a></p>
+      </div>
+      <div class="info-card">
+        <h3>📞 Téléphone</h3>
+        <p><a href="tel:+250780000000">+250 780 000 000</a></p>
+      </div>
+      <div class="info-card">
+        <h3>🗺️ Nous trouver</h3>
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=Kigali+Convention+Centre,+Kigali,+Rwanda&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Carte du Kigali Convention Centre">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="section-head reveal" data-anim="fade-in">
+    <span class="tag">FAQ</span>
+    <h2>Questions fréquentes</h2>
+  </div>
+
+  <div class="faq-list reveal" data-anim="fade-in">
+    <div class="faq-item">
+      <input type="checkbox" id="faq-1">
+      <label for="faq-1">Comment obtenir mon badge d'accès ?</label>
+      <div class="faq-answer">
+        <p>Votre badge est généré automatiquement après validation de votre inscription. Vous le recevrez par email une semaine avant l'événement, à présenter à l'accueil avec une pièce d'identité.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq-2">
+      <label for="faq-2">Le sommet propose-t-il une traduction simultanée ?</label>
+      <div class="faq-answer">
+        <p>Oui, toutes les sessions en amphithéâtre sont traduites en français, anglais et kinyarwanda. Les ateliers en petit groupe se tiennent dans la langue annoncée au programme.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq-3">
+      <label for="faq-3">Puis-je annuler ou modifier mon inscription ?</label>
+      <div class="faq-answer">
+        <p>Toute modification ou annulation est possible jusqu'à 15 jours avant le sommet en écrivant à notre adresse email. Passé ce délai, les frais d'inscription ne sont plus remboursables.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq-4">
+      <label for="faq-4">Les repas sont-ils inclus ?</label>
+      <div class="faq-answer">
+        <p>Le café d'accueil, les pauses et le déjeuner des trois jours sont inclus dans votre inscription. Les dîners de réseautage sont proposés en option lors de l'inscription.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input type="checkbox" id="faq-5">
+      <label for="faq-5">Existe-t-il des tarifs réduits pour les étudiants ?</label>
+      <div class="faq-answer">
+        <p>Oui, un tarif étudiant à -60% est disponible sur présentation d'une carte étudiante valide. Contactez-nous par email pour recevoir le code de réduction correspondant.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <span>AfriConnect Summit 2026 — Kigali, Rwanda</span>
+  <span>Réponse sous 48h ouvrées</span>
+</footer>
+
+<script src="assets/script.js"></script>
 </body>
 </html>
+    
